@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Support | Health Leadership Cafe</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-latte-dark: #634E3F;
+            --color-latte-light: #C4A484;
+            --color-cream: #F5E5C0;
+            --color-orange: #E8835A;
+            --color-orange-hover: #D5744C;
+            --font-heading: 'Inter', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-cream);
+            color: var(--color-latte-dark);
+            min-height: 100vh;
+        }
+
+        h1, h2 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+        }
+
+        .btn-primary {
+            background-color: var(--color-orange);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 9999px; /* Fully rounded */
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-orange-hover);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .thank-you-card {
+            background-color: white;
+            border: 2px solid var(--color-latte-light);
+            box-shadow: 0 10px 20px rgba(99, 78, 63, 0.1); /* Shadow based on dark latte */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-4">
+
+    <!-- Thank You Card Container -->
+    <div class="thank-you-card max-w-lg w-full p-8 md:p-12 rounded-2xl text-center">
+        
+        <div class="mb-6">
+            <i class="fa-solid fa-mug-hot text-6xl text-amber-500 mb-4"></i>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl text-orange-600 mb-4 leading-tight">
+            Thank You!
+        </h1>
+
+        <p class="text-xl mb-6 font-semibold">
+            You’re helping Curious Minds lead without burning out.
+        </p>
+
+        <p class="mb-8 text-lg text-gray-700">
+            Your support funds open-source leadership tools, community events, and vital resources for the innovators, creators, and changemakers driving our world forward.
+        </p>
+
+        <p class="mb-8 text-lg text-gray-700">
+            And thanks to Silicon.Garden, your impact is doubled, every euro you gave becomes two.
+        </p>
+        
+        <p class="mb-10 text-lg font-light italic">
+            Together, we’re giving the minds that change the world the tools to thrive.
+        </p>
+
+        <!-- Button to Return Home -->
+        <a href="index.html" class="btn-primary">
+            <i class="fa-solid fa-arrow-left mr-2"></i> Return to Campaign
+        </a>
+    </div>
+
+</body>
+</html>

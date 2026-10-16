@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Core -->
+    <title>HealthyLeadership.Cafe | Healthy Leadership for Curious Minds</title>
+    <meta name="description" content="Support Healthy Leadership for Curious Minds. An open-source initiative providing leadership tools, publications, and community for high-IQ, high-empathy innovators.">
+    <link rel="canonical" href="https://healthyleadership.cafe/">
+
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en">
+    <html lang="en">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:site_name" content="HealthyLeadership.Cafe">
+    <meta property="og:title" content="Healthy Leadership for Curious Minds">
+    <meta property="og:description" content="Help us give exceptional talent the tools and community they need to thrive. Support open-source leadership tools publications for Curious Minds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://healthyleadership.cafe/">
+    <meta property="og:image" content="https://healthyleadership.cafe/HealthyLeadership_SocialShare.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Healthy Leadership for Curious Minds">
+    <meta name="twitter:description" content="Open-source leadership tools and community for exceptional innovators.">
+    <meta name="twitter:image" content="https://healthyleadership.cafe/HealthyLeadership_SocialShare.jpg">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Theme / UX -->
+    <meta name="theme-color" content="#1f2933">
+
+    <!-- Fonts 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    -->
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          media="print"
+          onload="this.media='all'">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "HealthyLeadership.Cafe",
+      "url": "https://healthyleadership.cafe/",
+      "logo": "https://healthyleadership.cafe/logo.png",
+      "founder": [
+        { "@type": "Person", "name": "Michael Laussegger" },
+        { "@type": "Person", "name": "Gitte Klitgaard" }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Healthy Leadership for Curious Minds",
+      "url": "https://healthyleadership.cafe/"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    HealthyLeadership.Cafe
+                </div>
+                <div class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#crisis" onclick="toggleMenu()">The Call to Action</a>
+                    <a href="#solution" onclick="toggleMenu()">Solution</a>
+                    <a href="#download" onclick="toggleMenu()">Preview</a>
+                    <a href="#funding" onclick="toggleMenu()">Roadmap</a>
+                    <a href="#cta-section" class="text-highlight">Donate</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Healthy Leadership<br>
+            for Curious Minds</h1>
+            <h2>Help us give exceptional talent the tools to thrive.</h2>
+            
+            <!-- Funding Progress Tracker -->
+            <div class="funding-tracker">
+                <div class="progress-bar-bg">
+                    <!-- 350 is 70% of 500 -->
+                    <div class="progress-bar-fill" style="width: 143%;"></div>
+                </div>
+                <div class="funding-stats">
+                    <span class="raised-amount">€765</span> 
+                    <span class="goal-context">raised of €500 goal (153% of first milestone funded)</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <button onclick="document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth' })" class="btn btn-primary" style="margin-top: 15px;margin-right: 15px;margin-left: 15px;">Support Campaign</button>
+                <a href="#download" class="btn btn-outline" style="margin-top: 15px">Read The Preview</a>
+            </div>
+            
+            <div class="hero-badges">
+                <span><i class="fa-solid fa-book-open"></i> First Publication</span>
+                <span><i class="fa-solid fa-users"></i> Community Driven</span>
+                <span><i class="fa-solid fa-leaf"></i> Not-For-Profit Focus</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Crisis Section -->
+    <section id="crisis" class="crisis">
+        <div class="container">
+            <div class="crisis-grid">
+                <div class="crisis-content">
+
+                    <h4>Who is this for</h4>
+
+                    <h2>
+                    <strong>The Curious Minds</strong>
+                    </h2>
+
+                    <p>
+                    <span class="highlight-marker">Innovation comes from</span> individuals with unique insight. We call them <span class="highlight-marker">Curious Minds</span>. 
+                    They are driven by a deep desire to make sense of the world, to see things earlier, differently, 
+                    and with greater nuance. Often, they combine high cognitive ability with hyperfocus and emotional sensitivity, 
+                    along with the challenges that can accompany them.
+                    </p>
+
+                    <p>
+                    You'll find them among <span class="highlight-marker">pioneers</span>, 
+                    <span class="highlight-marker">founders</span>, 
+                    <span class="highlight-marker">researchers</span>, <span class="highlight-marker">artists</span>, 
+                    <span class="highlight-marker">entrepreneurs</span>, <span class="highlight-marker">tech nerds</span>, 
+                    and all those adventurous places curious people are drawn to. Some Curious Minds rise to the very
+                    top of personal, social, and financial success. 
+                    They are among the first to spot systemic dysfunction, anticipate ethical collapse, and envision
+                     <span class="highlight-marker">solutions</span> 
+                    to our <span class="highlight-marker">most pressing problems.</span> They believe the world can and 
+                    should change for the better, but <span class="highlight-marker">often lack the tools to lead</span> 
+                    that change.
+                    </p>
+
+                    <p>
+                        Standard self-leadership advice simply isn’t designed for Curious Minds. It often makes them feel 
+                        they need to fit in, when in fact they should listen more to their inner voices. 
+
+                        We acknowledge their role as creatives and innovators who are wired differently. 
+                        The <span class="highlight-marker">systemic rejection</span> they often face
+                        is a natural <span class="highlight-marker">reaction to innovation</span>. It’s a feature of the status quo - a system reacting to 
+                        novelty. 
+
+                        Curious minds are <span class="highlight-marker">wired to be different</span>. And for good reason.
+
+                    
+                    </p>
+
+                    <h4 style="margin-top: 80px">The Call to Action</h4>
+
+                    <h2>
+                    <strong>70% of the minds driving change are silently struggling.</strong>
+                    </h2>
+
+                    <p>
+                    The research is alarming. <span class="highlight-marker">More than 70% of entrepreneurs and creatives</span> report mental health challenges, 
+                    and half of all entrepreneurs experience burnout. 
+                    </p>
+
+                    <p>
+                    Being curious and <span class="highlight-marker">having seen</span> some of the <span class="highlight-marker">upsides</span> and <span class="highlight-marker">struggles</span> ourselves, we aim to create the tools 
+                    Curious Minds need to thrive in a world not always ready to embrace their uniqueness.
+                    </p>
+
+                    <p>
+                    The good news are that way over <span class="highlight-marker">30% of 
+                    </span> <span class="highlight-marker">Curious</span> <span class="highlight-marker">Minds</span> 
+                    may have the capacity to help</span>. Since you followed your curiosity this far, you might be one 
+                    of those who can and want to help, be it as a <span class="highlight-marker">coach</span>, 
+                    <span class="highlight-marker">contributor</span>, or <span class="highlight-marker">simply by donating</span>
+                    a small amount to help us reach our first milestone. 
+        
+                    </p>
+
+
+                    <div style="margin-top: 30px; margin-bottom: 80px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <button
+                            onclick="document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth' })"
+                            class="btn btn-primary"
+                            style="margin-top: 15px;">
+                            Support Campaign
+                        </button>
+
+                        <a href="#download" class="btn btn-outline" style="margin-top: 15px;">
+                            Read The Preview
+                        </a>
+                    </div>
+
+
+
+                    <h2>The Approach</h2>
+
+                    <p>
+                    We provide <span class="highlight-marker">actionable,</span> <span class="highlight-marker">open-source leadership 
+                    tools</span> to help healthy and Curious Minds thrive without self-sabotage. 
+                    
+                    We do so by acknowledging their role as creatives and innovators wired to be different.
+                    <span class="highlight-marker">Rejection isn’t a flaw;</span> it’s a system reacting to novelty. Curious Minds are not flawed.
+                    They are <span class="highlight-marker">wired to be different.</span>
+                    </p>
+
+                    <p>
+                    As George Bernard Shaw put it: “The reasonable man adapts himself to the world; the 
+                    unreasonable one persists in trying to adapt the world to himself. Therefore, all 
+                    progress depends on the unreasonable man.”
+                    </p>
+
+                    <p>
+                    We are <span class="highlight-marker">not here to fix Curious Minds</span>. 
+                    What is not broken does not need fixing. We are
+                    not here to fix the system. We acknowledge rejection, tension and friction as natural reactions to novelty.
+                    We do not provide medical or psychological advice. If you need personalized support, please consult a licensed 
+                    therapist, psychologist, psychiatrist, or medical doctor. In urgent situations, contact a crisis hotline or 
+                    emergency services.
+                    </p>
+
+                    <p>
+                    Instead, we <span class="highlight-marker">equip Curious Minds</span> with the tools they need to thrive</span> 
+                    in a system they are meant to disrupt and renew. We help them <span class="highlight-marker">embody</span> 
+                    <span class="highlight-marker">the</span> <span class="highlight-marker">change</span> they want to see in the world
+                    and focus their energy where they can <span class="highlight-marker">maximize their impact</span>. 
+                    </p>
+
+                    <p>
+                    Have you ever felt overwhelmed or unprepared for what lies ahead? 
+                    Try <span class="highlight-marker">The Ground Position</span>, the foundational exercise of Healthy Leadership. 
+                    It helps nurture a stable inner stance and build resilience 
+                    when circumstances radiate stress.
+                    </p>
+
+                    <p>
+                    Alternatively, explore <span class="highlight-marker">The Circle of Influence</span>. Learn how to focus your energy rather 
+                    than let it scatter. This is especially useful when you find yourself navigating a 
+                    polycrisis, juggling everyday performance demands, and managing a declining energy 
+                    level.
+                    </p>
+
+                    <p>
+                    Check out the preview of our first publication 
+                    and try our exercises.
+                    </p>
+
+                    <div style="margin-top: 30px; margin-bottom: 60px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <button
+                            onclick="document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth' })"
+                            class="btn btn-primary"
+                            style="margin-top: 15px;">
+                            Support Campaign
+                        </button>
+
+                        <a href="#download" class="btn btn-outline" style="margin-top: 15px;">
+                            Read The Preview
+                        </a>
+                    </div>
+
+
+                    <h2>Your Donation</h2>
+
+                    <p>
+                    We create <span class="highlight-marker">open source leadership publications</span>, 
+                    <span class="highlight-marker">tools</span>, 
+                    and <span class="highlight-marker">games</span>.
+                    We believe in open knowledge and are committed to keeping our
+                    resources <span class="highlight-marker">open source and free</span>, 
+                    ensuring maximum accessibility
+                    for <span class="highlight-marker">Curious Minds and their support systems</span>.
+                    </p>
+
+                    <p>
+                    Equally important, your funding helps launch 
+                    <strong>HealthyLeadership.Cafe</strong>, an <span class="highlight-marker">online community for 
+                    Curious Minds</span> featuring regular events, guest speakers, and 
+                    meaningful discussions. It exists not only to help Curious Minds
+                     excel, but also to build community and shine a light on a crisis 
+                     that too often goes unseen.
+                    </p>
+
+                    <p>
+                    Your support goes beyond funding development; it signals that you care 
+                    and enables us to direct resources where they will have the greatest impact.                    </p>
+
+                    <p>
+                    <strong>And your impact goes even further:</strong>
+                    </p>
+
+                    <p>
+                    Up to €5,000, <strong>Silicon.Garden</strong>, the operator behind
+                    this initiative, will match every euro donated.
+                    All contributions go directly into funding the initiative.
+                    By <span class="highlight-marker">helping Curious Minds thrive as innovators</span>,
+                    you are contributing to a healthier future for all of us.
+                    </p>
+
+                    <p>
+                    <strong>Do not just donate.</strong>
+                    Double your impact.
+                    Help us reach our goal and equip Curious Minds with the tools
+                    to lead without self-harm.
+                    <strong>Your €10 becomes €20 today.</strong>
+                    </p>
+
+                    <p>
+                    Early supporters
+                    will receive a special place in our
+                    <strong>Hall of Fame</strong>
+                    and, more importantly, in our very hearts.
+                    </p>
+
+
+                    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <button
+                            onclick="document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth' })"
+                            class="btn btn-primary"
+                            style="margin-top: 15px;">
+                            Support Campaign
+                        </button>
+
+                        <a href="#download" class="btn btn-outline" style="margin-top: 15px;">
+                            Read The Preview
+                        </a>
+                    </div>
+                    <div class="stat-box">
+                        <strong>What Research is Saying</strong>
+                                
+                                <ul class="research-list">
+                                    <li>High-IQ individuals show higher creativity. <a href="https://www.mdpi.com/2227-7102/15/11/1517">(*)</a></li>
+                                    <li>Entrepreneurial success correlates with ADHD traits. <a href="https://link.springer.com/article/10.1007/s11365-023-00888-9">(*)</a></li>
+                                    <li>ADHD affects <span class="text-highlight">29%</span> of entrepreneurs, but only <span class="text-highlight">4–5%</span> of adults in general population. <a href="https://link.springer.com/article/10.1007/s11187-018-0059-8">(*)</a></li>
+                                    <li>ADHD traits are common in creative professions (<span class="text-highlight">12–15%</span>). <a href="https://sifted.eu/articles/founders-mental-health-2025?utm_source=chatgpt.com">(*)</a></li>
+                                    <li>Founders report higher rates of depression (<span class="text-highlight">30%</span>), substance use, and bipolar disorder. <a href="https://link.springer.com/article/10.1007/s11187-018-0059-8">(*)</a></li>
+                                    <li>Over half of founders burned out in <span class="text-highlight">2024</span>. <a href="https://sifted.eu/articles/founders-mental-health-2025?utm_source=chatgpt.com">(*)</a></li>
+                                    <li>Up to <span class="text-highlight">70%</span> of creatives experience burnout. <a href="https://www.nevernotcreative.org/mentally-healthy-2024-survey">(*)</a></li>
+                                    <li><span class="text-highlight">72%</span> say entrepreneurship harms mental health; yet <span class="text-highlight">93%</span> would do it again. <a href="https://www.forbes.com/sites/annefield/2023/04/29/startup-founders-report-entrepreneurship-is-taking-a-toll-on-their-mental-health/?utm_source=chatgpt.com">(*)</a></li>
+                                </ul>
+                    </div>
+                </div>
+                
+                <div class="crisis-visual">
+                    <h3>System Failure</h3>
+                    <p>The system fails to support the curious minds who drive change. The rebel kids. The thinkers. The ones that don’t fit in.</p>
+                    <ul>
+                        <li>Symptoms of unmet needs are pathologized.</li>
+                        <li>High empathy is mistaken for weakness.</li>
+                        <li>Unique insights are dismissed as irrational.</li>
+                        <li>New ideas are dismissed as disruption.</li>
+                        <li>Social rejection and isolation emerge.</li>
+                        <li>Self-rejection follows suit.</li>
+                        <li>Mental health deteriorates.</li>
+                    </ul>
+                    <p style="margin-top:20px; font-weight:bold;">The world needs their brilliance, but their silent struggles hold them back.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2>Healthy Leadership for Curious Minds</h2>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--color-latte-med);">We are shifting the focus from fixing a deficit to cultivating a strength and equip Curious Minds with the self-coaching and leadership tools they need.</p>
+<div class="community-support-columns">
+    <div class="community-col">
+        <h3>About Our Community of Curious Minds</h3>
+        <ul>
+            <li>They are deeply curious and enjoy exploring complex topics</li>
+            <li>Often come with high cognitive ability and strong analytical skills</li>
+            <li>Hyperfocused on topics that spark interest</li>
+            <li>High sensitivity to social dynamics and group moods</li>
+            <li>Open to experimenting with new methods</li>
+            <li>Often short attention spans for peripheral topics</li>
+            <li>May experience systemic rejection as different or "too much"</li>
+            <li>Often at risk of inadequate support or even misdiagnosis</li>
+            <li>Having challenges finding suitable coaches or therapeutic support who understand the needs of our community</li>
+        </ul>
+    </div>
+    <div class="community-col">
+        <h3>How We Support Them</h3>
+        <ul>
+            <li><strong>Actionable Tools:</strong> Immediately usable without steep learning curves, enabling fast implementation and measurable impact</li>
+            <li><strong>Skimmable, Insightful Content:</strong> Quick to digest, with visual cues, bullets, highlights, and concise background for deep understanding</li>
+            <li><strong>Self-Coaching First:</strong> Supports independent reflection while offering pathways to certified coaches familiar with our community’s needs</li>
+            <li><strong>Pathways to Depth:</strong> Introduces advanced self-discovery methods for those who want deeper growth</li>
+            <li><strong>Method-Agnostic:</strong> Draw from a broad, timeless toolkit, selecting what works best for Curious Minds</li>
+            <li><strong>Scientifically Grounded:</strong> All tools and content are evidence-based and research-informed</li>
+            <li><strong>Interactive & Creative:</strong> Engaging formats that challenge hyperfocused minds and avoid routine</li>
+            <li><strong>Community & Network Building:</strong> Helps leaders connect, share experiences, and navigate the vast, often fragmented advisory landscape</li>
+        </ul>
+    </div>
+</div>
+
+            <div class="solution-cards">
+                <div class="card">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <h3>Gain Self-Clarity</h3>
+                    <p>Identify and name your unique profile before seeking external professional help, reducing the risk of misdiagnosis.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-compass"></i>
+                    <h3>Develop Leadership</h3>
+                    <p>Learn practical skills to navigate high-IQ/high-empathy profiles, preventing pitfalls like self-rejection or drugs, causing depression and isolation.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h3>Drive Systemic Change</h3>
+                    <p>We provide open-source resources for individuals, coaches, and organizations worldwide to foster better environments for Curious Minds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEW DOWNLOAD SECTION -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-container">
+                <div class="book-preview">
+                    <!-- Pure CSS Book Cover Mockup -->
+                    <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                        <i class="fa-solid fa-seedling" style="font-size:3rem; color:var(--color-orange); margin-bottom:20px; opacity:0.8;"></i>
+                        <div class="book-title">Healthy Leadership</div>
+                        <div class="book-subtitle">for Curious Minds</div>
+                        <div style="margin-top:20px; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:var(--color-latte-med);">Seed One<br>Ground Position</div>
+                    </div>
+                    <div class="book-author">By Michael Laussegger & Gitte Klitgaard</div>
+                </div>
+
+                <div class="download-content">
+                    <h4>Open Access Preview</h4>
+                    <h2>Healthy Leadership for Curious Minds - Ground Position</h2>
+                    <p>We believe in the power of open knowledge and are fully committed to it. Download a preview of our first open-source knowledge seed here. More will follow.</p>
+
+                    <p>This knowledge seed focuses on self-perception and self-leadership. The module includes a practical exercise called "Ground Position," which helps cultivate a balanced emotional inner state. This reliable inner safe space is essential for leading in a healthy and effective way.</p>
+
+                    <ul style="margin-bottom:30px; color:var(--color-latte-dark);">
+                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check" style="color:var(--color-mint-med); margin-right:10px;"></i> Practical "Ground Position" Exercises</li>
+                        <li style="margin-bottom:10px;"><i class="fa-solid fa-check" style="color:var(--color-mint-med); margin-right:10px;"></i> Concepts of Inner Voices & Directors</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--color-mint-med); margin-right:10px;"></i> Psychological Safety Framework</li>
+                    </ul>
+
+                    <!-- 
+                         NOTE FOR USER: 
+                         Replace 'Healthy Leadership.pdf' with the actual path to your file.
+                    -->
+                    <a href="https://github.com/michael-laussegger/healthy-leadership-for-curious-minds/blob/main/HealthyLeadership_GroundPosition.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-file-arrow-down" style="margin-right:10px;"></i> Download Preview
+                    </a>
+                    <p style="font-size:0.8rem; margin-top:15px; opacity:0.6;">*Preview Version 0.99 • 1MB • PDF Format</p>
+
+                </div>
+            </div>
+            <div class="disclaimer-box">
+                Disclaimer: With Healthy Leadership, we focus on healthy individuals, seeking to turn challenges into strengths. 
+                We do not provide medical or psychological advice. Please consult a professional for personalized support.
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Exercise  -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2>Download Exercise Ground Position</h2>
+            <p style="max-width: 700px; margin: 0 auto; color: var(--color-latte-med);">Download the “Ground Position” exercise for practical first steps in building a strong foundation for Healthy Leadership. We recommend reading Seed One first. Grounded in research on psychological safety, neuroplasticity, neurodiversity, and systems thinking.</p>
+            <img src="exercise_groundposition.png" alt="Exercise Ground Position" style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); margin-top:20px; margin-bottom:20px;">
+            <a href="https://github.com/michael-laussegger/healthy-leadership-for-curious-minds/blob/2e00bd3b6d99e4f21a8fc1bc9c22080d9c4283a2/HealthyLeadership_GroundPosition_Exercise.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-file-arrow-down" style="margin-right:10px;"></i> Download Exercise
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Deliverables -->
+    <section class="deliverables">
+        <div class="container">
+            <div class="deliverables-container">
+                <h2>What Your Donation Builds</h2>
+                <p>We build open-source tools and publications, released under 
+                   <strong>Creative Commons</strong> licensing for maximum accessibility and community impact.
+                </p>
+                
+                <div class="toolset-list">
+                    <span class="tool-badge">Self-Coaching Guides</span>
+                    <span class="tool-badge">Interactive Games</span>
+                    <span class="tool-badge">Open Source Publications</span>
+                    <span class="tool-badge">HR Awareness Kits</span>
+                    <span class="tool-badge">Community Events</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funding Goals Roadmap -->
+    <section id="funding" class="funding">
+        <div class="container">
+            <div class="text-center">
+                <h4>Roadmap</h4>
+                <h2>Every Euro Fuels Innovation</h2>
+                <p>We are building a systemic solution that scales. Your generous donation powers these stages.</p>
+            </div>
+
+            <div class="timeline">
+                
+                <!-- €500 -->
+                <div class="goal-node left">
+                    <div class="goal-content">
+                        <span class="goal-amount">€500</span>
+                        <span class="goal-title">Finalize & Launch</span>
+                        <p>Turn the preview into a professional digital publication, launch the core website, and produce an awareness video.</p>
+                    </div>
+                </div>
+
+                <!-- €1,000 -->
+                <div class="goal-node right">
+                    <div class="goal-content">
+                        <span class="goal-amount">€1,000</span>
+                        <span class="goal-title">The Upward Spiral Course</span>
+                        <p>Develop the first self-paced online course with experts. Structured tools to move from distress to healthy leadership.</p>
+                    </div>
+                </div>
+
+                <!-- €5,000 -->
+                <div class="goal-node left">
+                    <div class="goal-content">
+                        <span class="goal-amount">€5,000</span>
+                        <span class="goal-title">Full Toolset Completion</span>
+                        <p>Finalize all core Self-Coaching Guides and resources for stage one, ready for open-source Creative Commons distribution. Formal establishing of not-for-profit organization.</p>
+                    </div>
+                </div>
+
+                <!-- €15,000 -->
+                <div class="goal-node right">
+                    <div class="goal-content">
+                        <span class="goal-amount">€15,000</span>
+                        <span class="goal-title">Interactive Game Prototype</span>
+                        <p>Development of the first game app prototype focused on self-perception and leadership for teenagers and young adults.</p>
+                    </div>
+                </div>
+
+                <!-- €30,000 -->
+                <div class="goal-node left">
+                    <div class="goal-content">
+                        <span class="goal-amount">€30,000+</span>
+                        <span class="goal-title">Organizational Awareness Kits</span>
+                        <p>Create materials for HR/Leadership teams to foster supportive environments for Curious Minds.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta-section" class="cta-final">
+    <div class="container">
+            <div class="cta-box">
+                <h2>70% of the minds driving change are silently struggling.</h2>
+                <p>Help us give them the tools and community they need to thrive.</p>
+        
+                <div class="donations">
+                    <h3>Personal Donations</h3>
+                    <p>Early supporters will receive a lifetime honourable mention in our virtual Hall of Fame.
+                     Cannot support at the moment but love the mission? <a class="text-link" href="https://donate.stripe.com/7sYcN5gCM7xSbQobOhfYY0s">Donate a symbolic 50 Cent</a> so we know you care. (Includes electronic receipt; personal donations may not be tax-deductible in your country)</p>
+
+                    <button onclick="donateAction(5)" class="btn btn-primary">5 EUR</button>
+                    <button onclick="donateAction(10)" class="btn btn-primary">10 EUR</button>
+                    <button onclick="donateAction(25)" class="btn btn-primary">25 EUR</button>
+                    <button onclick="donateAction(50)" class="btn btn-primary">50 EUR</button>
+                    <button onclick="donateAction(100)" class="btn btn-primary">100 EUR</button>
+
+                    
+                </div>
+
+                <div class="donations">
+                    <h3>Business Sponsorships</h3>
+                    <p>Earn a place in the sponsors section of our website and be among the first to receive new materials (invoice with VAT incl.)</p>                
+                    <button onclick="donateAction(250)" class="btn btn-primary">250 EUR</button>
+                    <button onclick="donateAction(500)" class="btn btn-primary">500 EUR</button>
+                    <button onclick="donateAction(1000)" class="btn btn-primary">1000 EUR</button>
+                    <button onclick="donateAction(2500)" class="btn btn-primary">2500 EUR</button>
+                </div>
+
+                <br><br><br>
+                <p>Friends and Supporters,</p>
+
+                <p>After more than a decade of helping some of the brightest minds in tech thrive as innovators, entrepreneurs and managers, we’ve come to know the challenges of Curious Minds intimately. The system often works against their mental health—and we’re bold enough to believe we can change that.</p>
+
+                <p>Not by changing the system itself, but by equipping Curious Minds with the tools they need to truly thrive. Our own curiosity has taken us to many different places, and we'd love to continue sharing our experiences in scalable, not-for-profit ways in <strong>HealthyLeadership.Cafe</strong>.</p>
+
+                <p>Your support means a lot to us.<br>
+
+                <p>Thank you for your trust.<br>
+                Michael Laussegger &amp; Gitte Klitgaard</p>
+
+                <p><strong>PS:</strong> No amount is too small. Every contribution tells us that you care and want us to move this initiative forward.</p>
+                <img src="gitte_and_michael.png" alt="Michael Laussegger and Gitte Klitgaard" style="margin-top:20px; max-width:300px;">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span class="footer-logo">HealthyLeadership.Cafe</span>
+            <p class="footer-text">Help us give exceptional talent the tools to thrive.</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 HealthyLeadership.Cafe. All Rights Reserved. <br>
+                Healthy Leadership for Curious Minds is brought to you by Michael Laussegger and Gitte Klitgaard. 
+                Powered by Silicon.Garden.
+                <a onclick="revokeCookies()">Revoke Cookies Settings</a>.
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="cookie-banner">
+        <div id="cookie-message">
+            <p id="cookie-message-p">We do <strong>not use cookies</strong>, except for strictly necessary purposes. Opting in helps us improve your experience and focus on what matters most (<a href="https://www.silicon.garden/dataprivacy" target="_self">Privacy Policy</a>). Want to opt in?</p>
+        </div>
+        <div id="cookie-actions">
+            <button id="cookie-accept">Okay</button>
+            <button id="cookie-reject">No Thanks</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script>
+        //*****************************************************************
+        // Configuration
+        //
+        const privacyPolicyLink = "https://www.silicon.garden/dataprivacy";
+        const cookieConsentMessage = `We do <strong>not use cookies</strong>, except for strictly necessary purposes. Opting in helps us improve your experience and focus on what matters most (<a href="${privacyPolicyLink}" target="_self">Privacy Policy</a>). Want to opt in?`;
+        const analyticsTag = "G-C0425M8Z5F";
+        //
+        //*****************************************************************
+
+        // Load Google Analytics - do only if consent is given
+        function loadAnalytics() {
+            
+            if (window.analyticsLoaded) return;
+            window.analyticsLoaded = true;
+
+            // 1. DYNAMICALLY ADD THE GA LIBRARY SCRIPT HERE
+            const gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsTag}`;
+            document.head.appendChild(gaScript); // Add it to the <head> or <body>
+
+            // 2. RUN THE GA INITIALIZATION CODE
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', analyticsTag);
+        }
+
+        // Revoke cookies
+        function revokeCookies() {
+            localStorage.removeItem("cookie_consent");
+
+            // Scroll to top before reload
+            window.scrollTo({ top: 0, behavior: "instant" });
+
+            // Ensure scroll happens before reload
+            setTimeout(() => {
+                location.reload();
+            }, 0);
+        }
+
+
+        //Cookie Consent Banner logic
+        (function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("cookie-accept");
+            const rejectBtn = document.getElementById("cookie-reject");            
+            const consent = localStorage.getItem("cookie_consent");
+            document.getElementById("cookie-message-p").innerHTML = cookieConsentMessage;
+
+
+            console.log("Loading"); 
+
+            // If consent is ALREADY set (accepted or rejected), hide the banner immediately
+            if (consent) {
+                banner.hidden = true;
+                banner.style.display = "none"; // Extra safety for desktop
+                console.log("Cookie consent already set to: " + consent);
+                if (consent === "accepted") {
+                    loadAnalytics();
+                }
+            } 
+            // Otherwise, ensuring it is visible (optional if HTML is visible by default)
+            else {
+                console.log("Show cookie banner"); 
+                banner.hidden = false;
+                banner.style.display = "flex"; // or 'flex' depending on your design
+            }
+
+            // Handle acceptance and hide banner
+            acceptBtn.addEventListener("click", function () {
+                localStorage.setItem("cookie_consent", "accepted");
+                banner.style.display = "none"; 
+                loadAnalytics();
+            });
+
+            // Handle rejection and hide banner
+            rejectBtn.addEventListener("click", function () {
+                localStorage.setItem("cookie_consent", "rejected");
+                banner.style.display = "none"; 
+            });
+
+            // Load analytics if accepted 
+            if (consent === "accepted") {
+                loadAnalytics();
+            }
+
+        })();
+    </script>
+
+     <script src="script.js"></script>
+
+</body>
+</html>

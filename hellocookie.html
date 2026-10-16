@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Cookie - World's Smallest Cookie Consent Management</title>
+</head>
+<body>
+    
+    <!-- Trusted by Leading Brands -->
+    <section>
+        <h1>Hello Cookie</h1>
+        <p>Welcome to the worlds smallest cookie consent management.</p>
+        <a onclick="revokeCookies()">Revoke Cookies Settings</a>.
+        
+    </section>
+
+
+    <div id="cookie-banner">
+        <div id="cookie-message">
+            <p id="cookie-message-p">We do <strong>not use cookies</strong>, except for strictly necessary purposes. Opting in helps us improve your experience and focus on what matters most (<a href="https://www.silicon.garden/dataprivacy" target="_self">Privacy Policy</a>). Want to opt in?</p>
+        </div>
+        <div id="cookie-actions">
+            <button id="cookie-accept">Okay</button>
+            <button id="cookie-reject">No Thanks</button>
+        </div>
+    </div>
+
+
+    <!-- Google Analytics Integration with Consent Management
+    
+    This COOKIE CONSENT MANAGEMENT LOGIC needs three parts
+
+    Place at the end of the body to ensure the DOM is loaded before executing the script (inside <body>).
+    
+    1. HTML FOR THE BANNER
+
+    2. CSS STYLES FOR THE BANNER (eg.in styles.css)
+
+    3. JAVASCRIPT LOGIC TO HANDLE CONSENT AND LOAD ANALYTICS
+    
+    As follows:
+    -->
+    
+    <script>
+        //*****************************************************************
+        // Configuration
+        //
+        const privacyPolicyLink = "https://www.silicon.garden/dataprivacy";
+        const cookieConsentMessage = `We do <strong>not use cookies</strong>, except for strictly necessary purposes. Opting in helps us improve your experience and focus on what matters most (<a href="${privacyPolicyLink}" target="_self">Privacy Policy</a>). Want to opt in?`;
+        const analyticsTag = "G-LCYPPFPQ30";
+        //
+        //*****************************************************************
+
+        // Load Google Analytics - do only if consent is given
+        function loadAnalytics() {
+            
+            if (window.analyticsLoaded) return;
+            window.analyticsLoaded = true;
+
+            // 1. DYNAMICALLY ADD THE GA LIBRARY SCRIPT HERE
+            const gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsTag}`;
+            document.head.appendChild(gaScript); // Add it to the <head> or <body>
+
+            // 2. RUN THE GA INITIALIZATION CODE
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', analyticsTag);
+        }
+
+        // Revoke cookies
+        function revokeCookies() {
+            localStorage.removeItem("cookie_consent");
+
+            // Scroll to top before reload
+            window.scrollTo({ top: 0, behavior: "instant" });
+
+            // Ensure scroll happens before reload
+            setTimeout(() => {
+                location.reload();
+            }, 0);
+        }
+
+
+        //Cookie Consent Banner logic
+        (function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("cookie-accept");
+            const rejectBtn = document.getElementById("cookie-reject");            
+            const consent = localStorage.getItem("cookie_consent");
+            document.getElementById("cookie-message-p").innerHTML = cookieConsentMessage;
+
+
+            console.log("Loading"); 
+
+            // If consent is ALREADY set (accepted or rejected), hide the banner immediately
+            if (consent) {
+                banner.hidden = true;
+                banner.style.display = "none"; // Extra safety for desktop
+                console.log("Cookie consent already set to: " + consent);
+                if (consent === "accepted") {
+                    loadAnalytics();
+                }
+            } 
+            // Otherwise, ensuring it is visible (optional if HTML is visible by default)
+            else {
+                console.log("Show cookie banner"); 
+                banner.hidden = false;
+                banner.style.display = "flex"; // or 'flex' depending on your design
+            }
+
+            // Handle acceptance and hide banner
+            acceptBtn.addEventListener("click", function () {
+                localStorage.setItem("cookie_consent", "accepted");
+                banner.style.display = "none"; 
+                loadAnalytics();
+            });
+
+            // Handle rejection and hide banner
+            rejectBtn.addEventListener("click", function () {
+                localStorage.setItem("cookie_consent", "rejected");
+                banner.style.display = "none"; 
+            });
+
+            // Load analytics if accepted 
+            if (consent === "accepted") {
+                loadAnalytics();
+            }
+
+        })();
+    </script>
+
+    <style>
+        /* Container */
+        #cookie-banner {
+            position: fixed;
+            bottom: 20px;
+            z-index: 99999;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 800px;
+
+            display: flex;
+            align-items: center;       /* Vertically center the content */
+            justify-content: space-between;
+            gap: 1rem;                 /* Optional spacing between children */
+            padding: 1rem;
+
+            padding: 1rem;
+            bottom: 1rem;
+            background: #747474;
+            color: #fff;
+            border-radius: 12px;
+            
+        }
+
+        /* Message takes up remaining space */
+        #cookie-message {
+            flex: 1 1 auto;           /* Grow and shrink as needed */
+            color: white;
+        }
+
+        /* Actions container */
+        #cookie-actions {
+            flex: 0 0;           /* Do not grow, do not shrink */
+            display: flex;            /* Align buttons horizontally */
+            max-width: 500px;         /* Cap the width */
+            display: flex;            /* Align buttons horizontally */
+            gap: 0.5rem;              /* Space between buttons */   
+            flex-wrap: nowrap;
+            justify-content: right;
+        }
+
+        /* Optional button styling */
+        #cookie-accept,
+        #cookie-reject {
+        padding: 0.4rem 0.8rem;
+        min-width: 120px;
+        cursor: pointer;
+        background: #fff;
+        color: #747474;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        font-size: 0.875rem;
+        transition: background 0.2s, color 0.2s;
+        margin: 5px;
+        cursor: pointer;
+        }
+
+        /* Small screens: allow buttons to wrap into two rows */
+        @media (max-width: 900px) {
+            #cookie-banner {
+                flex-direction: column; /* stack text and buttons on very small screens */
+                align-items: flex-start;
+            }
+        }
+    </style>  
+
+</body>
+</html>
